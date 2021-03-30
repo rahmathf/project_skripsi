@@ -8,26 +8,26 @@
                 <div class="col-lg-4">
                     <!-- foto profil -->
                     <div class="container border-default border">
-                        <img src="/img/<?= $user->sampul ?>" alt="foto-profil" class="img-fluid">
+                        <img src="/img/<?= $user['sampul'] ?>" alt="foto-profil" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-8">
                     <form action="/transaksi/tarikSaldo" method="post">
-                        <input type="hidden" name="csrf_token" value="<?= csrf_token() ?>">
-                        <input type="hidden" name="id" value="<?= $user->id ?>">
+                        <?= csrf_field() ?>
+                        <input type="hidden" name="id" value="<?= $user['id'] ?>">
                         <div class="form-group">
                             <label for="nama">Nama Nasabah</label>
-                            <input class="form-control" type="text" name="nama" id="nama" value="<?= $user->nama ?>">
+                            <input class="form-control" type="text" name="nama" id="nama" value="<?= $user['nama'] ?>">
                         </div>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">RT</span>
                             </div>
-                            <input class="form-control" type="text" name="rt" id="rt" value="<?= $user->rt ?>">
+                            <input class="form-control" type="text" name="rt" id="rt" value="<?= $user['rt'] ?>">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">RW</span>
                             </div>
-                            <input class="form-control" type="text" name="rw" id="rw" value="<?= $user->rw ?>">
+                            <input class="form-control" type="text" name="rw" id="rw" value="<?= $user['rw'] ?>">
                         </div>
                         <div class="form-group">
                         </div>
@@ -37,7 +37,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">Rp</span>
                                 </div>
-                                <input class="form-control" type="text" name="saldo" id="saldo" value="<?= $user->saldo ?>">
+                                <input class="form-control" type="text" name="saldo" id="saldo" value="<?= $user['saldo'] ?>">
                             </div>
                         </div>
                         <hr>

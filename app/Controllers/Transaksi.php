@@ -51,7 +51,7 @@ class Transaksi extends BaseController
     {
         $data = [
             'title' => 'Tarik Saldo | SemangatePoor',
-            'user' => (object)$this->authModel->getById($id)
+            'user' => $this->authModel->getById($id)
         ];
         // dd($data);
         return view('transaksi/tarik', $data);
