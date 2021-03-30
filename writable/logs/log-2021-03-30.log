@@ -1,0 +1,12 @@
+ERROR - 2021-03-30 01:23:03 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2021-03-30 01:23:03 --> Unable to connect to the database.
+#0 /home/zangetsu/project_skripsi/vendor/codeigniter4/framework/system/Database/BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home/zangetsu/project_skripsi/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query()
+#2 /home/zangetsu/project_skripsi/app/Models/AuthModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+#3 /home/zangetsu/project_skripsi/app/Controllers/Auth.php(95): App\Models\AuthModel->get_data_login()
+#4 /home/zangetsu/project_skripsi/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Auth->login()
+#5 /home/zangetsu/project_skripsi/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#6 /home/zangetsu/project_skripsi/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#7 /home/zangetsu/project_skripsi/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 /home/zangetsu/project_skripsi/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/zangetsu/...')
+#9 {main}

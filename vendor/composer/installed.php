@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '3ab116662455e7b867231174a641e26619c13ee6',
+    'reference' => 'dd16c982a539794d9ed9a8767a534f44790c9909',
     'name' => 'codeigniter4/appstarter',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '3ab116662455e7b867231174a641e26619c13ee6',
+      'reference' => 'dd16c982a539794d9ed9a8767a534f44790c9909',
     ),
     'codeigniter4/framework' => 
     array (
@@ -46,6 +46,15 @@
       array (
       ),
       'reference' => 'cd46398f42c2ab191ffb0b57c07e911c7c28eb25',
+    ),
+    'fortawesome/font-awesome' => 
+    array (
+      'pretty_version' => '5.15.3',
+      'version' => '5.15.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd79d85c3fad85ad1885e87ed558f4afd6fce8289',
     ),
     'kint-php/kint' => 
     array (
