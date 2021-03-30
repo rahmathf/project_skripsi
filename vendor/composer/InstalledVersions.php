@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'dd16c982a539794d9ed9a8767a534f44790c9909',
+    'reference' => 'c59029d13021fba6b49eb76b5e6b0e82b82b42ac',
     'name' => 'codeigniter4/appstarter',
   ),
   'versions' => 
@@ -42,7 +42,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'dd16c982a539794d9ed9a8767a534f44790c9909',
+      'reference' => 'c59029d13021fba6b49eb76b5e6b0e82b82b42ac',
     ),
     'codeigniter4/framework' => 
     array (
@@ -70,15 +70,6 @@ private static $installed = array (
       array (
       ),
       'reference' => 'cd46398f42c2ab191ffb0b57c07e911c7c28eb25',
-    ),
-    'fortawesome/font-awesome' => 
-    array (
-      'pretty_version' => '5.15.3',
-      'version' => '5.15.3.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'd79d85c3fad85ad1885e87ed558f4afd6fce8289',
     ),
     'kint-php/kint' => 
     array (

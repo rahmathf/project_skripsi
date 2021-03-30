@@ -49,7 +49,8 @@ class Sampah extends BaseController
         // session();
         $data = [
             'title' => 'Form Tambah Data Sampah',
-            'validation' => \Config\Services::validation()
+            'validation' => \Config\Services::validation(),
+            'user' => $this->authModel->find(session('id'))
         ];
 
         return view('sampah/create_sampah', $data);

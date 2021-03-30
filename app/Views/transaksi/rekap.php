@@ -24,16 +24,14 @@
 
 <body>
     <div style="font-size:30px; color:#d00">Rekap Transaksi</div>
-    <h4>
-        CV. Bank Sampah<br>
-        Purbalingga, Indonesia
+    <h4>CV. Bank Sampah</h4>
+    <h4>Purbalingga, Indonesia
     </h4>
-    <hr>
-    <p>Dari : <span><?= date('d F y', strtotime($dari)) ?></span></p>
-    <p>Sampai : <span><?= date('d F y', strtotime($sampai)) ?></span></p>
-    <hr>
+    <h6>Dari : <span><?= date('d F y', strtotime($dari)) ?></span></h6>
+    <h6>Sampai : <span><?= date('d F y', strtotime($sampai)) ?></span></h6>
     <h6></h6>
-    <table>
+    <h6 style="text-align:center">===== List Transaksi =====</h6>
+    <table class="table-tr">
         <tr>
             <th style="width: 5%; text-align:center">No</th>
             <th style="width: 25%;">Nama Nasabah</th>

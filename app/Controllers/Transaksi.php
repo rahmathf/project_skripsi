@@ -144,21 +144,28 @@ class Transaksi extends BaseController
     }
     public function rekap()
     {
-        $dari = $this->request->getGet('dari');
-        $sampai = $this->request->getGet('sampai');
+        $dari = $this->request->getVar('dari');
+        $sampai = $this->request->getVar('sampai');
         $data = [
             'transaksi' => $this->transaksiModel->rekapTransaksi($dari, $sampai),
             'dari' => $dari,
             'sampai' => $sampai
         ];
-        $html = view('transaksi/rekap', $data);
-        $pdf = new TCPDF('P', 'mm', 'A4', true);
+        $html = view('transaksi/rekap', [
+            'transaksi'
+            => $this->transaksiModel->rekapTransaksi($dari, $sampai),
+            'dari' => $dari,
+            'sampai' => $sampai
+        ]);
+        $pdf = new TCPDF('P', PDF_UNIT, 'A4', true, 'UTF-8', false);
         $pdf->SetCreator('Bayu Zangetsu, S.Kom');
         $pdf->SetTitle('Rekap Transaksi');
         $pdf->setPrintHeader(false);
         $pdf->setPrintFooter(false);
         $pdf->addPage();
-        $pdf->writeHTML($html, true, false, true, false, 'L');
+        // dd($pdf);
+        $pdf->writeHTML($html, true, false, true, false, '');
+        // $pdf->writeHTML($html);
         $this->response->setContentType('application/pdf');
         $pdf->Output('Rekap-Transaksi.pdf', 'I');
     }
