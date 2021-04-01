@@ -50,6 +50,7 @@ class BaseController extends Controller
 		// E.g.: $this->session = \Config\Services::session();
 		session();
 		$this->validation = \Config\Services::validation();
+		$this->request = \Config\Services::request();
 		$pager = \Config\Services::pager();
 	}
 }

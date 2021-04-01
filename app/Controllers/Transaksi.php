@@ -151,12 +151,8 @@ class Transaksi extends BaseController
             'dari' => $dari,
             'sampai' => $sampai
         ];
-        $html = view('transaksi/rekap', [
-            'transaksi'
-            => $this->transaksiModel->rekapTransaksi($dari, $sampai),
-            'dari' => $dari,
-            'sampai' => $sampai
-        ]);
+        dd($data);
+        $html = view('transaksi/rekap', $data);
         $pdf = new TCPDF('P', PDF_UNIT, 'A4', true, 'UTF-8', false);
         $pdf->SetCreator('Bayu Zangetsu, S.Kom');
         $pdf->SetTitle('Rekap Transaksi');

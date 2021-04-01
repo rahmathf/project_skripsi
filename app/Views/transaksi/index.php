@@ -217,7 +217,8 @@
                     type: "POST",
                     url: "<?= base_url('transaksi/hapus') ?>",
                     data: {
-                        id: id
+                        id: id,
+                        <?= csrf_token() ?>: "<?= csrf_hash() ?>"
                     },
                     dataType: "text",
                     success: function(response) {
